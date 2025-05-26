@@ -1,9 +1,9 @@
 #------------------------with tomcat image mavne need to be install and run goal before-------------
 # we need to install mavne and run goal make it ready war file 
-# FROM tomcat:latest
-# RUN cp -R  /usr/local/tomcat/webapps.dist/*  /usr/local/tomcat/webapps
+FROM tomcat:latest
+RUN cp -R  /usr/local/tomcat/webapps.dist/*  /usr/local/tomcat/webapps
 # COPY /webapp/target/*.war /usr/local/tomcat/webapps
-# CMD ["catalina.sh", "run"]
+CMD ["catalina.sh", "run"]
 
 
 --------------------with mavne and tomcat images---------
